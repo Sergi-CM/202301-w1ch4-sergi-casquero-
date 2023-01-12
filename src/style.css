@@ -1,5 +1,52 @@
-@import url("/node_modules/@canvas-fonts/arial-rounded-bold/Arial\ Rounded\ Bold.ttf");
+@import url("/node_modules/@fontsource/nunito/400.css");
+
+:root {
+  --color-primary: #ed6436;
+
+  --font-text-size: 1rem;
+  --font-header-size: 3.875rem;
+  --font-subheader-size: 1.313rem;
+
+  --padding-main: 70px;
+
+  --card-height: 570px;
+  --card-radius: 40px;
+}
+
+* {
+  box-sizing: border-box;
+}
 
 html {
-  font-family: Arial arial-rounded;
+  font-family: nunito, sans-serif;
+}
+
+body,
+h1,
+h2 {
+  margin: 0;
+}
+
+.main {
+  padding: var(--padding-main)
+}
+
+.headers {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 50px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.cards img {
+  width: 30%;
+  height: var(--card-height);
+  object-fit: cover;
+  border-radius: var(--card-radius);
 }
