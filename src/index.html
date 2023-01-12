@@ -12,6 +12,18 @@
 
 <body>
 
+  <header>
+    <img src="/src/assets/logo.png" alt="logo huellita" width="80px" height="80px">
+    <nav>
+      <ul>
+        <li><a href="Home">Home</a></li>
+        <li><a href="Live Demo">Live Demo ▼</a></li>
+        <li><a href="Live Demo Blocks">Live Demo Blocks ▼</a></li>
+        <li><a href="Home">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <main class="main">
     <section class="headers">
       <div>
@@ -20,11 +32,29 @@
       </div>
       <a href="view-all" class="headers__button">View all</a>
     </section>
-    <div class="cards">
-      <img src="assets/01.jpg" alt="perrete mordiendo juguete">
-      <img src="assets/02.jpg" alt="gatete escondido flipando">
-      <img src="assets/03.jpg" alt="perrete corriendo por el campo">
-    </div>
+    <section class="cards">
+      <div class="card">
+        <img src="assets/01.jpg" alt="perrete mordiendo juguete">
+        <div class="card__overlay">
+          <span class="card__title">Activities</span>
+          <span class="card__description">Toys Playtime</span>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/02.jpg" alt="gatete escondido flipando">
+        <div class="card__overlay">
+          <span class="card__title">Activities</span>
+          <span class="card__description">Active Rest</span>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/03.jpg" alt="perrete corriendo por el campo">
+        <div class="card__overlay">
+          <span class="card__title">Activities</span>
+          <span class="card__description">Game Walks</span>
+        </div>
+      </div>
+    </section>
   </main>
 
 </body>
