@@ -1,13 +1,21 @@
-@import url("/node_modules/@fontsource/nunito/400.css");
+@import url("/node_modules/@fontsource/nunito/800.css");
+
 
 :root {
   --color-primary: #ed6436;
+  --color-text: rgb(19, 19, 19);
 
   --font-text-size: 1rem;
   --font-header-size: 3.875rem;
   --font-subheader-size: 1.313rem;
 
   --padding-main: 70px;
+
+  --button-vertical-padding: 25px;
+  --button-horizontal-padding: 40px;
+  --button-corner-radius: 32px;
+
+  --text-regular: nunito, sans-serif;
 
   --card-height: 570px;
   --card-radius: 40px;
@@ -19,6 +27,7 @@
 
 html {
   font-family: nunito, sans-serif;
+  color: var(--color-text)
 }
 
 body,
@@ -26,6 +35,15 @@ h1,
 h2 {
   margin: 0;
 }
+
+a,
+a:active,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+
 
 .main {
   padding: var(--padding-main)
@@ -36,6 +54,24 @@ h2 {
   justify-content: space-between;
   align-items: flex-end;
   margin-bottom: 50px;
+}
+
+.headers__button {
+  background-color: var(--color-primary);
+  text-transform: uppercase;
+  padding: var(--button-vertical-padding) var(--button-horizontal-padding);
+  color: white;
+  border-radius: 0 var(--button-corner-radius) var(--button-corner-radius);
+}
+
+h1 {
+  font-size: var(--font-subheader-size);
+  color: var(--color-primary);
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: var(--font-header-size);
 }
 
 .cards {
