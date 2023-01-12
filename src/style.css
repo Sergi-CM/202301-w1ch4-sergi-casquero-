@@ -155,3 +155,42 @@ h2 {
   font-weight: 800;
   font-size: 2.213rem;
 }
+
+@media only screen and (max-width: 1000px) {
+
+  .headers__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .headers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .headers__button {
+    padding: 15px 40px;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card__overlay {
+    opacity: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 45px;
+    gap: 5px;
+  }
+
+}
